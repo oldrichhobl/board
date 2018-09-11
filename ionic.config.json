@@ -1,0 +1,7 @@
+{
+  "name": "board",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
