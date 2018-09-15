@@ -20,7 +20,7 @@ clickPole(id) {
      console.dir(id); 
      let idd = document.getElementById(id);
      console.dir(idd);
-     idd.style = "fill: silver;";
+     // idd.style = "fill: silver;";
    }
 }
 
