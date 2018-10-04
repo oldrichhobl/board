@@ -41,45 +41,95 @@ xmlns:xlink="http://www.w3.org/1999/xlink"
      </linearGradient>
    </defs>  
 
-   <!-- carky na kruhu minuty -->
-   <defs>
-     <g id="r1" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;">
-       <rect id="a1" x="5" y="5" rx="20" width="115" height="115"   (click)="clickPole('a1')" />
-       <rect x="130" y="5" rx="20" width="115" height="115"  style="fill: silver;"/>
-       <rect x="255" y="5" rx="20" width="115" height="115" />
-       <rect x="380" y="5" rx="20" width="115" height="115" style="fill: silver;"/>
-       <rect x="505" y="5" rx="20" width="115" height="115" />
-       <rect x="630" y="5" rx="20" width="115" height="115" style="fill: silver;"/>
-       <rect x="755" y="5" rx="20" width="115" height="115" />
-       <rect x="880" y="5" rx="20" width="115" height="115" style="fill: silver;"/>
-     </g>
-     <g id="r2" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;">
-       <rect x="5" y="5" rx="20" width="115" height="115" style="fill: silver;"/>
-       <rect x="130" y="5" rx="20" width="115" height="115" />
-       <rect x="255" y="5" rx="20" width="115" height="115" style="fill: silver;"/>
-       <rect x="380" y="5" rx="20" width="115" height="115" />
-       <rect x="505" y="5" rx="20" width="115" height="115" style="fill: silver;"/>
-       <rect x="630" y="5" rx="20" width="115" height="115" />
-       <rect x="755" y="5" rx="20" width="115" height="115" style="fill: silver;"/>
-       <rect x="880" y="5" rx="20" width="115" height="115" />
-     </g>
-   </defs>
+   <!--                          -->
+
    <!-- ramecek   -->
    <rect x="0" y="0" rx="20" width="1000" height="1000"
    stroke-width="15" 
    style="fill: url(#two_h); stroke: black;"
    pointer-events="visiblePoint" />
 
-  <use xlink:href="#r1" /> 
-  <use xlink:href="#r2" transform="translate(0 125)" /> 
-  <use xlink:href="#r1" transform="translate(0 250)"  /> 
-  <use xlink:href="#r2" transform="translate(0 375)"  /> 
-  <use xlink:href="#r1" transform="translate(0 500)"  /> 
-  <use xlink:href="#r2" transform="translate(0 625)"  /> 
-  <use xlink:href="#r1" transform="translate(0 750)"  /> 
-  <use xlink:href="#r2" transform="translate(0 875)"  /> 
-
-
+<!--  radky shora dolu -->
+  <g id="r8" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;">
+       <rect id="a1" x="5" y="5" rx="20" width="115" height="115"   (click)="clickPole('a8')" />
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b8')" style="fill: silver;"/>
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c8')" />
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d8')" style="fill: silver;"/>
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e8')" />
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f8')" style="fill: silver;"/>
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g8')" />
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h8')" style="fill: silver;"/>
+  </g>
+     <g id="r2" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;"  transform="translate(0 125)" >
+       <rect x="5" y="5" rx="20" width="115" height="115" (click)="clickPole('a7')" style="fill: silver;"/>
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b7')"  />
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c7')" style="fill: silver;"/>
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d7')" />
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e7')" style="fill: silver;"/>
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f7')" />
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g7')" style="fill: silver;"/>
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h7')" />
+  </g>
+  <g id="r1" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;" transform="translate(0 250)" >
+       <rect id="a1" x="5" y="5" rx="20" width="115" height="115"   (click)="clickPole('a6')" />
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b6')" style="fill: silver;"/>
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c6')" />
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d6')" style="fill: silver;"/>
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e6')" />
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f6')" style="fill: silver;"/>
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g6')" />
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h6')" style="fill: silver;"/>
+  </g>
+     <g id="r2" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;"  transform="translate(0 375)" >
+       <rect x="5" y="5" rx="20" width="115" height="115" (click)="clickPole('a5')" style="fill: silver;"/>
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b5')"  />
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c5')" style="fill: silver;"/>
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d5')" />
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e5')" style="fill: silver;"/>
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f5')" />
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g5')" style="fill: silver;"/>
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h5')" />
+  </g>
+  <g id="r1" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;"transform="translate(0 500)" >
+       <rect id="a1" x="5" y="5" rx="20" width="115" height="115"   (click)="clickPole('a4')" />
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b4')" style="fill: silver;"/>
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c4')" />
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d4')" style="fill: silver;"/>
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e4')" />
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f4')" style="fill: silver;"/>
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g4')" />
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h4')" style="fill: silver;"/>
+  </g>
+     <g id="r2" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;"  transform="translate(0 625)" >
+       <rect x="5" y="5" rx="20" width="115" height="115" (click)="clickPole('a3')" style="fill: silver;"/>
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b3')"  />
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c3')" style="fill: silver;"/>
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d3')" />
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e3')" style="fill: silver;"/>
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f3')" />
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g3')" style="fill: silver;"/>
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h3')" />
+  </g>
+  <g id="r1" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;"transform="translate(0 750)" >
+       <rect id="a1" x="5" y="5" rx="20" width="115" height="115"   (click)="clickPole('a2')" />
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b2')" style="fill: silver;"/>
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c2')" />
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d2')" style="fill: silver;"/>
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e2')" />
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f2')" style="fill: silver;"/>
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g2')" />
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h2')" style="fill: silver;"/>
+  </g>
+     <g id="r2" stroke="darkgreen" stroke-width="5" style="fill: url(#two_h); stroke: green;"  transform="translate(0 875)" >
+       <rect x="5" y="5" rx="20" width="115" height="115" (click)="clickPole('a1')" style="fill: silver;"/>
+       <rect x="130" y="5" rx="20" width="115" height="115" (click)="clickPole('b1')"  />
+       <rect x="255" y="5" rx="20" width="115" height="115" (click)="clickPole('c1')" style="fill: silver;"/>
+       <rect x="380" y="5" rx="20" width="115" height="115" (click)="clickPole('d1')" />
+       <rect x="505" y="5" rx="20" width="115" height="115" (click)="clickPole('e1')" style="fill: silver;"/>
+       <rect x="630" y="5" rx="20" width="115" height="115" (click)="clickPole('f1')" />
+       <rect x="755" y="5" rx="20" width="115" height="115" (click)="clickPole('g1')" style="fill: silver;"/>
+       <rect x="880" y="5" rx="20" width="115" height="115" (click)="clickPole('h1')" />
+  </g>
    
       <!-- carovy rastr -->
        <line x1="0" y1="125" x2="1000" y2="125" stroke-width="1" stroke="black" />
