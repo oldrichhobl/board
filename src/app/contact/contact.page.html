@@ -107,8 +107,8 @@ xmlns:xlink="http://www.w3.org/1999/xlink"
        <line x1="0" y1="875" x2="1000" y2="875" stroke-width="1" stroke="black" />
        <line x1="875" y1="0" x2="875" y2="1000" stroke-width="1" stroke="black" />
        
-    <!-- kruhovy kamen 4ervený -->
-    <circle cx="312.5" cy="312.5" r="45" 
+    <!-- kruhovy kamen cervený -->
+    <circle id="c1" cx="312.5" [attr.cy]="300" r="100" 
     fill="url(#gradient_3D_red)" stroke="yellow" stroke-width="3" />
 
 
@@ -123,7 +123,13 @@ xmlns:xlink="http://www.w3.org/1999/xlink"
 
 </svg>
 </ion-card>
+
   <ion-item>
-     <button [style.backgroundColor]="enable ? '#00CCEE' : '#FF00EE'">Test buttonu</button>
-  </ion-item>
+  	<ion-badge>Y: {{sliderrange}}</ion-badge>
+  <ion-range  min="100" max="800" color="secondary" pin="true" [(ngModel)]="sliderrange" (ionChange)="ionChange($event)">
+    <ion-icon slot="start" size="small" name="sunny"></ion-icon>
+    <ion-icon slot="end" name="sunny"></ion-icon>
+  </ion-range>
+</ion-item>
+
 </ion-content>
