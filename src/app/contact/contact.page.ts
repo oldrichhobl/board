@@ -6,7 +6,12 @@ import { Events } from '@ionic/angular';
   templateUrl: 'contact.page.html',
   styleUrls: ['contact.page.scss']
 })
+
 export class ContactPage {
+
+public sliderrangex: number = 100;
+public sliderrangey: number = 100;
+
  constructor(public events: Events ) {
     console.log("CONTRUCTOR ")
     events.subscribe('ionChange', (user) => {
@@ -25,18 +30,20 @@ ionChange(e)
   console.log("ionChange " );
   console.dir(e );
   let idd = document.getElementById("c1");
-  //console.log(idd.getAttribute('cy'));
+  // console.log(idd.getAttribute('cy'));
   // posun o padesat : idd.setAttribute('cy', 50 + Number(idd.getAttribute('cy'));
-  idd.setAttribute('cy', this.sliderrange);
+  idd.setAttribute('cx', this.sliderrangex.toString());
+  idd.setAttribute('cy', this.sliderrangey.toString());
 
 }  
 clickPole(id) {
-     console.log("openLocalSPZ " + this.sliderrange);
+     console.log("clickPole " + this.sliderrangey);
      console.dir(id); 
      let idd = document.getElementById("c1");
-     console.log(idd.getAttribute('cy'));
+     console.log(this.sliderrangey.toString());
     // posun o padesat : idd.setAttribute('cy', 50 + Number(idd.getAttribute('cy'));
-    idd.setAttribute('cy', this.sliderrange);
+    this.sliderrangey+=50;
+    idd.setAttribute('cy', this.sliderrangey.toString());
      // idd.cy = 300;
      // idd.style = "fill: silver;";
    }
