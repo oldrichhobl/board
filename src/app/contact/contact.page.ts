@@ -49,7 +49,7 @@ ionChange(e)
   this.storage.set('xcoor', this.sliderrangex.toString());
   this.storage.set('ycoor', this.sliderrangey.toString());
 
-  let idd = document.getElementById("c1");
+  let idd = document.getElementById("circ1");
   // console.log(idd.getAttribute('cy'));
   // posun o padesat : idd.setAttribute('cy', 50 + Number(idd.getAttribute('cy'));
   idd.setAttribute('cx', this.sliderrangex.toString());
@@ -59,13 +59,31 @@ ionChange(e)
 clickPole(id) {
      console.log("clickPole " + this.sliderrangey);
      console.dir(id); 
-     let idd = document.getElementById("c1");
+     let idd = document.getElementById("circ1");
      console.log(this.sliderrangey.toString());
     // posun o padesat : idd.setAttribute('cy', 50 + Number(idd.getAttribute('cy'));
-    this.sliderrangey+=50;
-    idd.setAttribute('cy', this.sliderrangey.toString());
-     // idd.cy = 300;
-     // idd.style = "fill: silver;";
+     this.sliderrangey+=50;
+     idd.setAttribute('cy', this.sliderrangey.toString());
+    // idd.cy = 300;
+    // idd.style = "fill: silver;";
+     switch (id) {
+      case "a1" :      idd.setAttribute('style', 'fill: blue;');
+      break;
+      case "a2" :      idd.setAttribute('style', 'fill: yellow;');
+      break;
+      case "a3" :      idd.setAttribute('style', 'fill: red;');
+      break;
+      case "a4" :      idd.setAttribute('style', 'fill: green;');
+      break;
+      case "a5" :      idd.setAttribute('style', 'fill: shadow;');
+      break;
+      case "a6" :      idd.setAttribute('style', 'fill: light-blue;');
+      break;
+      case "a7" :      idd.setAttribute('style', 'fill: pink;');
+      break;
+      case "a8" :      idd.setAttribute('style', 'fill: black;');
+      break;
+     }
    }
 }
 
