@@ -1,10 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>S T A R T   ver.:2019-07-12 </ion-title>
+    <ion-title>START: <ion-datetime  displayFormat="DD.MM.YYYY HH:mm" value="{{today}}" ></ion-datetime>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  Test šachovnice vytvořené v SVG.
+  Test board vytvořené v SVG.
   <p>Podrobnosti na  <a target="_blank" rel="noopener" href="https://www.dramatik.cz">dramatik.cz</a> a tak stále dále.</p>
+
+<ion-item>
+  <ion-label>MM DD YY</ion-label>
+  <ion-datetime displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime>
+</ion-item>
+<ion-item>
+  <ion-label>Today</ion-label>
+  <ion-datetime displayFormat="DD.MM.YYYY " value="{{today}}" ></ion-datetime>
+</ion-item>
+
 </ion-content>
